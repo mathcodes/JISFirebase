@@ -1,0 +1,245 @@
+:root {
+  --blue: #0067b6;
+  --ocean: #29648a;
+  --primary: hsl(204, 54%, 35%);
+  --sky: #2e9cca;
+  --magic: #25274d;
+  --fading: #464866;
+  --cloud: #aaabb8;
+  --lime: #9cb700;
+  --night: #111;
+}
+
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
+.App {
+  text-align: center;
+  /* background-color: #111111; */
+}
+
+.mainHeader {
+  text-align: left;
+  padding-left: 5%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+a {
+  color: #29648a;
+  text-decoration: underline;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #29648a;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  
+}
+
+.colHeader{
+  margin-top: 1rem;
+  padding: 1% 1%;
+  color: #fff;
+  /* height: (calc((fit-content)+ (155%)*(window))) px; */
+  width: 18rem;
+  /* width: 100%; */
+  /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
+  background-color: #222222;
+  border-radius: 1rem;
+  border-color: #111;
+  border-style: solid;
+  /* margin: .1%; */
+  transition-duration: 1s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+
+
+
+footer,
+.fixed-bottom {
+  background-color: #222222;
+  z-index: inherit 100;
+}
+.gifResultList{
+  /* overflow-y:scroll; */
+  height:80%;
+}
+.Component {
+  padding: 1% 1%;
+  color: #fff;
+  /* height: (calc((fit-content)+ (155%)*(window))) px; */
+  width: 18rem;
+  /* width: 100%; */
+  /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
+  background-color: #222222;
+  border-radius: 1rem;
+  border-color: #111;
+  border-style: solid;
+  /* margin: .1%; */
+  transition-duration: 1s;
+  transition-delay: 0s;
+  z-index: 1;
+}
+.colHeader {
+  height: fit-content;
+  background-color: #111;
+  border-style: none;
+}
+
+.wrapper {
+  background-color: #111;
+}
+
+.btnSideBar{
+  background-color:#222222;
+  column-width: 100%;
+  height:5rem;
+  opacity: .8;
+  color: #9cb700;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+  z-index: 3000;
+  display: fixed;
+  position:absolute 80 0 0 0;
+}
+.btnSideBar:hover{
+  background-color:#9cb700;
+  color: #222222;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 1;
+  z-index: 3000;
+}
+.btn-group-vertical{
+  opacity: 1;
+  padding-top:3rem;
+  width:10%;
+  z-index: 3000;
+}
+.btn-group-vertical:hover{
+  opacity: 1;
+}
+.sideBarButton{
+  background-color: #9cb700;
+  color: #222222;
+  font-size: .5rem;
+  text-align: left;
+  font-weight: bold;
+  z-index: 2001;
+  height: 2rem;
+  transition-duration: .5s;
+  transition-delay: 0s;
+}
+
+.SBstyles{
+  
+}
+
+.sideBarButton:hover{
+  background-color: #222222;
+  color: #9cb700;
+}
+
+.sideBarButtonClose{
+  background-color: #9cb700;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 2000;
+  height: 3rem;
+  transition-duration: .5s;
+  transition-delay: 0s;
+}
+
+.sideBarButtonClose:hover{
+  color:#9cb700;
+  background-color:#222222;
+}
+
+/*/* ------------------ ------------ ------------------ */
+/*/* ------------------ Breakpoints  ------------------ */
+/*/* ------------------ ------------ ------------------ */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .Component {
+    height: 20rem;
+    width: 28rem;
+ }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+ 
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  .Component {
+    height: 24rem;
+    width: 32rem;
+ }
+}
+body {
+  background: khaki;
+}
+
+h4 {
+  color: darkslategray;
+}
+
+.imagery { 
+  width: auto; 
+  height: 100px;
+  margin-top: 6px;
+}
+
+.w3-container {
+  padding-bottom: 30px !important;
+  height: 80vh !important;
+  overflow: auto;
+}
+
+.iframe1 {
+  width: 100%;
+  height: 700px;
+}
+
+.iframe2 {
+  width: 750px;
+  height: 700px;
+}
